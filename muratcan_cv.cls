@@ -78,14 +78,15 @@
     
 \newcommand{\githubview}{\href{\@linkedinaccount}{\faLinkedinSquare\ \footnotesize linkedin}}
 \newcommand{\linkedinview}{\href{\@githubaccount}{\faGithubSquare\ \footnotesize github}}
-
+\newcommand{\emailview}{\href{mailto:\@mail}{\faEnvelope\ \footnotesize \@mail}} 
+%%{\href{@mail}{\fatMailBulk\ \footnotesize linkedin}}
 
 \newcommand{\name}{%
     {\large \@firstname \ \textsc{\@lastname}}
 }
 
 \newcommand{\contact}{%
-        {\small \@address  \\ \@mobile \\ \@mail%
+        {\small \@address  \\ \@mobile \\ \emailview %
         \\%
         \linkedinview \cps \githubview \\ 
         } % 
