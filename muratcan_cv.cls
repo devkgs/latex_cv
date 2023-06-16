@@ -12,7 +12,7 @@
 \RequirePackage{pgffor}
 \RequirePackage{titlesec}
 \RequirePackage{tikz}
-\RequirePackage{fontspec}
+%\RequirePackage{fontspec}
 \RequirePackage[left=0.75in,top=0.3in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 \RequirePackage{hyperref}
 \RequirePackage{fontawesome}
@@ -79,12 +79,13 @@
 \newcommand{\githubview}{\href{\@linkedinaccount}{\faLinkedinSquare\ \footnotesize linkedin}}
 \newcommand{\linkedinview}{\href{\@githubaccount}{\faGithubSquare\ \footnotesize github}}
 
+
 \newcommand{\name}{%
     {\large \@firstname \ \textsc{\@lastname}}
 }
 
 \newcommand{\contact}{%
-        {\small \@address  \cps \@mobile \\ \@mail%
+        {\small \@address  \\ \@mobile \\ \@mail%
         \\%
         \linkedinview \cps \githubview \\ 
         } % 
@@ -100,7 +101,7 @@
 }
 
 \newcommand\coverlettersubview{
-\begin{tabular}{>{\scshape \bfseries \color{\@themecolor}}l  >{\small }l}
+\begin{tabular}{>{\scshape \bfseries \color{\@themecolor}}l  >{\small }l}
 Company: & \@companyname \\
 Position: & \@claimedposition \\
 \end{tabular}
