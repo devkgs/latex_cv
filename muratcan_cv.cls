@@ -79,7 +79,7 @@
 \newcommand{\githubview}{\href{\@linkedinaccount}{\faLinkedinSquare\ \footnotesize linkedin}}
 \newcommand{\linkedinview}{\href{\@githubaccount}{\faGithubSquare\ \footnotesize github}}
 \newcommand{\emailview}{\href{mailto:\@mail}{\faEnvelope\ \footnotesize \@mail}} 
-\newcommand{\mobileview}{\faPhoneSquare \@mobile}
+\newcommand{\mobileview}{\href{tel:\@mobile}{\faPhoneSquare \footnotesize \@mobile}}
 %%{\href{@mail}{\fatMailBulk\ \footnotesize linkedin}}
 
 \newcommand{\name}{%
@@ -198,6 +198,6 @@ Position: & \@claimedposition \\
 \newcommand\createfootnote{%
   \renewcommand{\footnotesize}{\fontsize{7pt}{11pt}\selectfont}
     \renewcommand\footnoterule{\rule{0.3\linewidth}{0.5pt}}
-    \let\thefootnote\relax\footnote{\today\ / \href{https://github.com/muratcankaracabey/latex_cv}{source code}}}
+    \let\thefootnote\relax\footnote{\today\ / \href{https://github.com/devkgs/latex_cv}{source code}}}
 
 
