@@ -1,4 +1,4 @@
-\documentclass{muratcan_cv}
+\documentclass{CV_Sylvain_Krieg}
 
 \setname{Sylvain}{Krieg}
 \setaddress{Avenue de Cour 71, 1007 Lausanne}
@@ -20,6 +20,7 @@
 % Summary
 \addblocktext{Summary}{%
 blablabla
+yocto
 }
 
 %
@@ -29,14 +30,14 @@ blablabla
     \datedexperience{Astrocast S.A.}{03.2021-06.2022} 
     \explanation{Senior Software Engineer} 
     \explanationdetail{\coloredbullet\ %
-     Firmware development in C on STM32 MCU for satellite receivers \\
+     Firmware development in C on STM32 for low power satellite receivers \\
      \coloredbullet\ Software architecture, requirements and documentation \\
      \coloredbullet\ Hardware interface library development in C++\\
      \coloredbullet\ Integration testing in Python\\
      \coloredbullet\ Unit testing in C with hardware mock using fff and gMock\\
      \coloredbullet\ Azure devops CI pipelines configuration and Azure cloud management\\
      \coloredbullet\ Implementation of communication encryption and device security\\
- 	 \coloredbullet\ MAC layer development, unit testing and hardware in the loop verification
+ 	 \coloredbullet\ MAC layer development
      }
     %
     \datedexperience{Ecorobotix S.A.}{09.2016-02.2021} 
@@ -53,14 +54,14 @@ blablabla
     \explanation{Scientific collaborator} 
     \explanationdetail{\coloredbullet\ %
      FPGA development and testing for a 100Gb/s compression platform \\
-     \coloredbullet\ Java development of an open source electronic simulation software
+     \coloredbullet\ Java development of \href{https://github.com/logisim-evolution}{Logisim}, an open source electronic simulation software 
      }
 	%
     \datedexperience{DepSys}{01.2013-08.2013} 
     \explanation{Embedded Software Engineer} 
     \explanationdetail{\coloredbullet\ %
      Development of a monitoring software for smart-grid distributed power
-inverters. Websocket communication between embedded Linux platform
+inverters. \\ Websocket communication with embedded Linux platform
 in Java
      }
 	%
@@ -68,7 +69,7 @@ in Java
     \explanation{Embedded Software Engineer} 
     \explanationdetail{\coloredbullet\ %
      Development of a firmware for airport weather sensors \\
-	\coloredbullet\ Firmware development in C on a 32bits Pic microcontroller using freeRTOS\\
+	\coloredbullet\ Firmware development in C on a dsPic32 using freeRTOS\\
 	\coloredbullet\ Real-time signal processing and low power management\\   
 	\coloredbullet\ Product deployment and release management for France, Germany,
 Austria and Slovakia  
@@ -93,41 +94,29 @@ Vaud (Heig-VD), Yverdon-Les-Bains}{2009}
     \explanation{B.S In Computer Science, Embedded Systems} 
     
     \datedexperience{Bobst S.A., Lausanne}{2004}
-    \explanation{CFC (Federal Certificate of Capability) in electronics.} 
+    \explanation{CFC (Federal Certificate of Capability) in electronics} 
 
 %
 % Skills
 \section{Skills}
     %
-    \newcommand{\skillone}{\createskill{Programming Languages}{\textbf{\emph{Experienced:}} \ \  Python \cpshalf Swift \ \ \textbf{\emph{Familiar:}} \ \  Javascript \cpshalf Objective-C \cpshalf Bash \cpshalf Java \cpshalf Scheme}}
+    \newcommand{\skillone}{\createskill{Programming Languages}
+	{C \cpshalf C++  \cpshalf Java \cpshalf Python \cpshalf Labview}}
+
     %
-    \newcommand{\skilltwo}{\createskill{Software Development}{Programming Paradigms \cpshalf GIT \cpshalf CLI \cpshalf Agile Methodology \cpshalf DevOps Lifecycles}}
+    \newcommand{\skilltwo}{\createskill{Software Development}{Git \cpshalf Jenkins \cpshalf Azure Devops \cpshalf Jira \cpshalf Docker}}
     %
-    \newcommand{\skillthree}{\createskill{Frameworks \ \& \ Libraries}{Jupyter \cpshalf Matplotplib \cpshalf Numpy \cpshalf Pandas \cpshalf Scikit-learn \cpshalf Gym \cpshalf PyTorch \cpshalf Tensorflow}}
+    \newcommand{\skillthree}{\createskill{Frameworks \ \& \ Libraries}{Cmake \cpshalf gTest/gMock \cpshalf ZeroMQ \cpshalf Protobuf }}
     %
-    \newcommand{\skillfour}{\createskill{iOS Programming}{RxSwift \cpshalf PromiseKit \cpshalf CocoaPods \cpshalf Autolayout/DSLs}}
+    \newcommand{\skillfour}{\createskill{Sys admin}{Linux (udev, systemd, user-groups, iptables) \cpshalf Ansible \cpshalf Aws (EC2) \cpshalf Azure cloud}}
     %
-    \newcommand{\skillfive}{\createskill{Languages}{\textbf{\emph{Native:}} \ \  Turkish \ \ \textbf{\emph{Fluent:}} \ \ English \ \ \textbf{\emph{Beginner:}} \ \  German }}
+     \newcommand{\skillsix}{\createskill{Hardware Platforms}
+	{STM32 \cpshalf ATmega \cpshalf CUDA \cpshalf Nvidia ARM platform \cpshalf Altera FPGA}}
     %
-    \createskills{\skillone, \skilltwo, \skillthree, \skillfour, \skillfive}
-%
-% Experience
-\section{Extra}
-    \newcommand{\extraone}{%
-    \lipsum[1][7-8]\par %replace this part with actual text
-    }
+    \newcommand{\skillfive}{\createskill{Languages}{\textbf{\emph{Native:}} \ \  French \ \ \textbf{\emph{C1:}} \ \ English \ \ \textbf{\emph{B2:}} \ \  German }}
     %
-    \newcommand{\extratwo}{%
-    \lipsum[1][9-10]\par %replace this part with actual text
-    }
-    %
-    \newcommand{\extrathree}{%
-    \lipsum[1][11-12]%replace this part with actual text
-    }
-    %
-    \newcommand{\listofextras}{\extraone, \extratwo, \extrathree}
-    %
-    \createbullets{\listofextras}
+    \createskills{\skillone, \skilltwo, \skillthree, \skillfour, \skillsix, \skillfive}
+
 %
 %Footnote
 \createfootnote
