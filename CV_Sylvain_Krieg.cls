@@ -83,7 +83,9 @@
 %%{\href{@mail}{\fatMailBulk\ \footnotesize linkedin}}
 
 \newcommand{\name}{%
-    {\large \@firstname \ \textsc{\@lastname}}
+    {\large \@firstname \ \textsc{\@lastname} \\
+    \small \@position
+    }
 }
 
 \newcommand{\contact}{%
