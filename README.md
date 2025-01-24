@@ -23,6 +23,10 @@
 - You can change the header content with the ```set..``` commands in the beginning and also the the color of the theme.
 - Just replace the actual texts with your related education/experience and also don't forget to replace ```\lipsum[1][1-12]\par``` with actual texts. That package is just used for illustration reasons. Since I am not sure what to write to those parts of the resume right now.
   
+```
+sudo apt install texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-fonts-extra texlive-pictures
+```
+
 ### TODOS
 
 - [ ] Resolve the warnings.
