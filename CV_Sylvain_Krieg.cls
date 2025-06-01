@@ -202,4 +202,3 @@ Position: & \@claimedposition \\
     \renewcommand\footnoterule{\rule{0.3\linewidth}{0.5pt}}
     \let\thefootnote\relax\footnote{\today\ / \href{https://github.com/devkgs/latex_cv}{source code}}}
 
-
